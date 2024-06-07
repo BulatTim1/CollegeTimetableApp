@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "402726036981",
+    "project_id": "collegetimetable-879d4",
+    "storage_bucket": "collegetimetable-879d4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:402726036981:android:46c0b6f72e4ae56630acbc",
+        "android_client_info": {
+          "package_name": "com.bulattim.flutter_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "402726036981-uj8adamfjdts9leaifjamflbopcnp3vf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrrmjrFSF9OMKIjjbvVj5j8-5IvYfVexM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "402726036981-uj8adamfjdts9leaifjamflbopcnp3vf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:402726036981:android:69b9fe24d35dda6830acbc",
+        "android_client_info": {
+          "package_name": "com.example.flutter_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "402726036981-uj8adamfjdts9leaifjamflbopcnp3vf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrrmjrFSF9OMKIjjbvVj5j8-5IvYfVexM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "402726036981-uj8adamfjdts9leaifjamflbopcnp3vf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
