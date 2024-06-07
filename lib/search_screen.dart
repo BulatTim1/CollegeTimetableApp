@@ -121,9 +121,7 @@ class _SearchScreenState extends State<SearchScreen> {
     } else {
       try {
         Navigator.of(context).pop();
-      } catch (e) {
-        print(e);
-      }
+      } catch (e) {}
       return true;
     }
   }

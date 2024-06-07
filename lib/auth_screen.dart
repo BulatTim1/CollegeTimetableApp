@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+// import 'package:http/http.dart' as http;
 import 'timetable_screen.dart';
 
 class AuthScreen extends StatefulWidget {
@@ -29,6 +30,7 @@ class _AuthScreenState extends State<AuthScreen> {
   }
 
   Future<void> _signInWithEmailAndPassword() async {
+    //TODO: Implement auth by ldap
     try {
       final UserCredential userCredential = await _auth.signInWithEmailAndPassword(
         email: _emailController.text,
@@ -50,7 +52,9 @@ class _AuthScreenState extends State<AuthScreen> {
         sound: true,
       );
 
-      print('Permission granted: ${settings.authorizationStatus}');
+      if (kDebugMode) {
+        print('Permission granted: ${settings.authorizationStatus}');
+      }
 
       // Save device notification ID to Firestore
       String? deviceNotificationId = await messaging.getToken();

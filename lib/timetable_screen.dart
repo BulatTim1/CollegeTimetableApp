@@ -31,7 +31,7 @@ class _TimetableScreenState extends State<TimetableScreen> {
   DateTime _currentDay = DateTime.now();
   Map<String, dynamic>? _timetable;
   bool _isHoliday = false;
-  Stream<DocumentSnapshot> _snapshot = const Stream.empty();
+  final Stream<DocumentSnapshot> _snapshot = const Stream.empty();
 
   @override
   void initState() {
@@ -198,12 +198,10 @@ class _TimetableScreenState extends State<TimetableScreen> {
         }
       }
     }
-    try {
-      final DocumentSnapshot holidaySnapshot = await FirebaseFirestore.instance
-          .collection('holidays')
-          .doc(_currentDay.year.toString())
-          .get();
-    } catch (e) {}
+    final DocumentSnapshot holidaySnapshot = await FirebaseFirestore.instance
+        .collection('holidays')
+        .doc(_currentDay.year.toString())
+        .get();
 
     final Map<String, dynamic>? holidayData =
         holidaySnapshot.data() as Map<String, dynamic>?;
